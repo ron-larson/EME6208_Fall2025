@@ -10,9 +10,9 @@
   <tr>
     <td width="50%"><form method="POST" name="instantquiz">
       <table border="0" width="100%" cellspacing="0" cellpadding="0">
-        <caption><strong>Ron Larson's EME6208 Sample Quiz</strong></caption>
 	<!--- RNL: 10/15/2025 Added caption for algorithm-related quiz -->
-	<caption><strong>"Code Breakers: What is an Algorithm?"</strong></caption>
+	<caption><strong>"Code Breakers: 'What is an Algorithm?' Quiz"</strong></caption>
+        <caption><strong>Ron Larson, EME6208 Fall 2025</strong></caption>
         <tr>
           <td width="100%"><div align="center"><center><p><textarea rows="10" name="thequestion"
           cols="69" wrap="virtual"></textarea></td>
@@ -63,7 +63,7 @@ document.instantquiz.thesolution.value=''
 if (whichone>=total+1)
 tempmn.value="End of quiz"
 else{
-tempmn.value=whichone+")"+question[whichone]+"\n\n"+"a)"+eval('choice'+whichone+'[1]')+"\n"+"b)"+eval('choice'+whichone+'[2]')+"\n"+"c)"+eval('choice'+whichone+'[3]')+"\n"+"d)"+eval('choice'+whichone+'[4]')
+tempmn.value=whichone+") "+question[whichone]+"\n\n"+"a) "+eval('choice'+whichone+'[1]')+"\n"+"b) "+eval('choice'+whichone+'[2]')+"\n"+"c) "+eval('choice'+whichone+'[3]')+"\n"+"d) "+eval('choice'+whichone+'[4]')
 if (document.instantquiz.cmode.checked)
 document.instantquiz.thesolution.value=solution[whichone]
 }
