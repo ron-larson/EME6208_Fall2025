@@ -72,10 +72,15 @@ document.instantquiz.thesolution.value=solution[whichone]
 function responses(){
 var temp2=document.instantquiz.theresponse
 var temp3=temp2.options[temp2.selectedIndex].text
+// RNL 10/15/2025: added variable "test" to help eliminate the random "undefined" message that is output to the Solution textbox
+var test=Math.round(Math.random()*compliments.length-1)
 if (temp3!=solution[whichone]&&temp2.selectedIndex!=0)
 document.instantquiz.thesolution.value="Sorry, the correct answer is "+solution[whichone]
 else if(temp2.selectedIndex!=0)
-document.instantquiz.thesolution.value=compliments[Math.round(Math.random()*compliments.length-1)]
+// RNL 10/15/2025: modified so that .value gets "test" variable value as part of solution 
+// to help eliminate the random "undefined" message that is output to the Solution textbox
+//document.instantquiz.thesolution.value=compliments[Math.round(Math.random()*compliments.length-1)]
+document.instantquiz.thesolution.value=compliments[test]
 }
 
 generatequestions()
