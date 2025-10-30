@@ -1,6 +1,13 @@
 body{
 		font-family: Arial, Helvetica, sans-serif;	/* Font to use */
-		background-color:#f0f4f8;
+		/* background-color:#f0f4f8; -- RNL 10/29/2025 commented out for bg experiment*/
+
+		/* --- New Background Image --- */
+		background-image: url('pexels-pixabay-270549.jpg'); /* CHANGE 'background.jpg' to your image name */
+		background-size: cover; /* Stretches the image to fill the screen */
+		background-position: center center; /* Centers the image */
+		background-repeat: no-repeat; /* Stops the image from tiling */
+		background-attachment: fixed; /* Makes the image stay in place when you scroll */
 }
 	#footer{
 		height:30px;
@@ -20,7 +27,7 @@ body{
 		width:940px;
 		height:auto;
 		border:1px solid #317082;
-		background-color:#FFF;
+		background-color:rgba(255, 255, 255, 0.95); /* <-- 95% opaque white */
 		-moz-user-select:none;
 		overflow: auto;
 	}
