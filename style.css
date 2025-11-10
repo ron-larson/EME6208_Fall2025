@@ -196,6 +196,8 @@ a:hover {
 	height: 100px;
 	margin: 0 auto;
 	padding: 50px 0px 0px 0px;
+	
+	/* --- ADDED TO CREATE A "STICKY FOOTER" --- */
 	margin-top: auto;
 }
 
@@ -286,4 +288,5 @@ a:hover {
     text-decoration: none;
 
 }
+
 
