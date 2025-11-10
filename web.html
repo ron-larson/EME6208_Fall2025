@@ -36,6 +36,13 @@
 			<h2>Project Page Under Construction</h2>
 			<p>This page will showcase my work for the Web Design project. Content will be added at the end of the course as part of the final e-Portfolio.</p>
 		</div>
+		<p>This project was an exercise in deconstructing, modifying, and personalizing existing web code. The task was to take a base HTML and JavaScript quiz template and customize its structure, content, and visual design. For my project, I created the <a href="https://ron-larson.github.io/EME6208_Fall2025/quiz/" target="_blank" rel="noopener noreferrer">"Code Breakers: What is an Algorithm?"</a> quiz, a 10-question assessment aimed at a 7th-grade audience. This topic was an opportunity to apply instructional design principles by scaffolding a foundational Computer Science concept for novice learners.</p>
+
+<p>The modification process was comprehensive. In the <strong>JavaScript file (popsolution.js)</strong>, I expanded the quiz structure by doubling the questions from five to ten, updating the <code>var total</code> variable, and carefully rewriting all questions, answers, and the corresponding <code>solution</code> array. In the <strong>HTML file (index.html)</strong>, I customized the 'look and feel' by changing the page's background color (<code>#fcba03</code>) and adding a custom title and author caption to give the project a unique identity.</p>
+
+<p>A significant challenge emerged during development. After adding my new questions, the quiz page rendered with blank questions. I used a systematic troubleshooting process: by adding each question back into the <code>.js</code> file one-by-one and re-testing, I isolated the bug to lines containing double quotes (<code>"</code>) within the question text. The solution was to replace these with the JavaScript escape sequence (<code>\"</code>), which allowed the strings to be parsed correctly. This debugging phase was a key learning experience, reinforcing the importance of methodical testing and the precise syntax required by JavaScript. The entire project was edited in Notepad on Windows 11 and is hosted in a public GitHub repository.</p>
+
+<p><em>The original script foundation for this quiz was provided by <a href="http://javascriptkit.com" target="_blank" rel="noopener noreferrer">JavaScript Kit</a>.</em></p>
 		<div class="entry" style="text-align: left;">
 			<p>Reflection text goes here.</p>
 		</div>
