@@ -16,8 +16,8 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #333333;
-	
-	/* --- ADDED TO CREATE A "STICKY FOOTER" --- */
+
+	/* --- STICKY FOOTER FIX (PART 1) --- */
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -65,7 +65,8 @@ a:hover {
 	background: #FFFFFF; /* Keep white content wrapper */
     /* Add some margin to the top and bottom to reveal more of the background image */
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    /* NOTE: 'flex-grow: 1;' has been removed */
 }
 
 .container {
@@ -197,7 +198,7 @@ a:hover {
 	margin: 0 auto;
 	padding: 50px 0px 0px 0px;
 	
-	/* --- ADDED TO CREATE A "STICKY FOOTER" --- */
+	/* --- STICKY FOOTER FIX (PART 2) --- */
 	margin-top: auto;
 }
 
@@ -286,7 +287,4 @@ a:hover {
     background: #0021A5;
     color: #FFFFFF;
     text-decoration: none;
-
 }
-
-
