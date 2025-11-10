@@ -284,3 +284,13 @@ a:hover {
     text-decoration: none;
 }
 
+/* --- Style for Contact Page Headshot --- */
+.contact-headshot {
+	float: left;
+	width: 250px;
+	height: auto; /* Maintains aspect ratio */
+	margin-right: 25px;
+	margin-bottom: 15px;
+	border-radius: 8px; /* Matches project box style */
+	border: 1px solid #eee; /* Adds a light border */
+}
