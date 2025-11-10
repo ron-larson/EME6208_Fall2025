@@ -16,6 +16,11 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #333333;
+	
+	/* --- ADDED TO CREATE A "STICKY FOOTER" --- */
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 h1, h2, h3 {
@@ -61,6 +66,9 @@ a:hover {
     /* Add some margin to the top and bottom to reveal more of the background image */
     margin-top: 20px;
     margin-bottom: 10px;
+
+	/* --- ADDED TO CREATE "STICKY FOOTER" --- */
+    flex-grow: 1;
 }
 
 .container {
@@ -278,4 +286,5 @@ a:hover {
     background: #0021A5;
     color: #FFFFFF;
     text-decoration: none;
+
 }
