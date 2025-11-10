@@ -65,10 +65,7 @@ a:hover {
 	background: #FFFFFF; /* Keep white content wrapper */
     /* Add some margin to the top and bottom to reveal more of the background image */
     margin-top: 20px;
-    margin-bottom: 10px;
-
-	/* --- ADDED TO CREATE "STICKY FOOTER" --- */
-    flex-grow: 1;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -199,6 +196,7 @@ a:hover {
 	height: 100px;
 	margin: 0 auto;
 	padding: 50px 0px 0px 0px;
+	margin-top: auto;
 }
 
 #footer p {
@@ -288,3 +286,4 @@ a:hover {
     text-decoration: none;
 
 }
+
