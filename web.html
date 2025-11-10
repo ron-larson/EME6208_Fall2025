@@ -13,7 +13,7 @@
 
 <body>
 <div id="wrapper">
-<div id="menu-wrapper">
+	<div id="menu-wrapper">
 		<div id="menu" class="container">
 			<ul>
 				<li><a href="../EME6208_Fall2025/">About</a></li>
@@ -30,44 +30,45 @@
 		<h1>Web Design</h1>
 		<p>This page captures the submissions for two projects: 1) an HTML and Javascript-based quiz, and 2) an HTML and CSS-based drag-and-drop assessment.</p>
 	</div>
-<div id="page" class="container">
-	<div>
-		<div class="gallery-container" style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; padding: 10px;">
-    
-    <div class="gallery-item" style="flex-basis: 45%; min-width: 300px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; padding-bottom: 20px; background: #fff;">
-        <h3 style="margin-bottom: 10px; color: #005a9c;">"Code Breakers" Quiz</h3>
-        <a href="https://ron-larson.github.io/EME6208_Fall2025/quiz/" target="_blank" rel="noopener noreferrer" title="View the live quiz">
-            <img src="images/quiz.png" alt="Screenshot of the JavaScript Quiz" style="width: 100%; border-radius: 8px 8px 0 0;"/>
-        </a>
-        <p style="margin-top: 15px; padding: 0 10px;">A 10-question multiple-choice quiz on algorithms, built with HTML and JavaScript logic.</p>
-    </div>
+	<div id="page" class="container">
+		<div>
+			<div class="entry" style="text-align: center; margin-top: 30px;">
+			    <h3>Project Artifacts</h3>
+			</div>
+			<div class="gallery-container" style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; padding: 10px;">
+		    	<div class="gallery-item" style="flex-basis: 45%; min-width: 300px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; padding-bottom: 20px; background: #fff;">
+		       	 	<h3 style="margin-bottom: 10px; color: #005a9c;">"Code Breakers" Quiz</h3>
+		       	 	<a href="https://ron-larson.github.io/EME6208_Fall2025/quiz/" target="_blank" rel="noopener noreferrer" title="View the live quiz">
+		            	<img src="images/quiz.png" alt="Screenshot of the JavaScript Quiz" style="width: 100%; border-radius: 8px 8px 0 0;"/>
+		        	</a>
+		        	<p style="margin-top: 15px; padding: 0 10px;">A 10-question multiple-choice quiz on algorithms, built with HTML and JavaScript logic.</p>
+		    	</div>
 
-    <div class="gallery-item" style="flex-basis: 45%; min-width: 300px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; padding-bottom: 20px; background: #fff;">
-        <h3 style="margin-bottom: 10px; color: #005a9c;">"Code Concepts" Sorter</h3>
-        <a href="https://ron-larson.github.io/EME6208_Fall2025/drag/" target="_blank" rel="noopener noreferrer" title="View the live drag-and-drop assessment">
-            <img src="images/drag.png" alt="Screenshot of the Drag-and-Drop Assessment" style="width: 100%; border-radius: 8px 8px 0 0;"/>
-        </a>
-        <p style="margin-top: 15px; padding: 0 10px;">An interactive drag-and-drop sorting activity built with HTML, CSS, and DOM manipulation.</p>
-    </div>
+			    <div class="gallery-item" style="flex-basis: 45%; min-width: 300px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; padding-bottom: 20px; background: #fff;">
+			        <h3 style="margin-bottom: 10px; color: #005a9c;">"Code Concepts" Sorter</h3>
+			        <a href="https://ron-larson.github.io/EME6208_Fall2025/drag/" target="_blank" rel="noopener noreferrer" title="View the live drag-and-drop assessment">
+			            <img src="images/drag.png" alt="Screenshot of the Drag-and-Drop Assessment" style="width: 100%; border-radius: 8px 8px 0 0;"/>
+			        </a>
+			        <p style="margin-top: 15px; padding: 0 10px;">An interactive drag-and-drop sorting activity built with HTML, CSS, and DOM manipulation.</p>
+			    </div>
+			</div>
 
-</div>
+			<div class="entry" style="text-align: left; margin-top: 30px;">
+			    <h3>Project Reflection</h3>
+			    <p>For my web design work, I focused on exploring different methods for creating interactive assessments. I adapted two separate projects to build learning tools for a 7th-grade computer science unit that I previously developed, <strong>"Block Busters: Building and Fixing Our First App"</strong>, with each project presenting a unique set of technical challenges and learning opportunities.</p>
+			    
+			    <p>The first project, the <strong>"Code Breakers" Quiz</strong>, was an exercise in <strong>JavaScript</strong> logic. I modified a foundational script from <a href="http://javascriptkit.com" target="_blank" rel="noopener noreferrer">JavaScript Kit</a> to expand the question bank from five to ten, creating new, age-appropriate content on the topic of algorithms. The primary challenge was a data-parsing bug; I discovered that double quotes (<code>"</code>) within the question text caused a JavaScript error that prevented questions from rendering. I debugged this by systematically re-adding each question, isolating the error, and implementing the correct escape sequence (<code>\"</code>).</p>
+			    
+			    <p>The second project, the <strong>"Code Concepts" Drag-and-Drop Assessment</strong>, was a deeper dive into <strong>layout, CSS, and JavaScript-driven DOM manipulation</strong>. I significantly re-engineered the structure from three to four content categories (Algorithm, Variable, Loop, and Conditional) and replaced all content items. To enhance its instructional use, I added a "Quiz Mode" checkbox that dynamically instructs the JavaScript to lock answers upon being dropped. The main challenge was a series of CSS and layout conflicts. I had to widen the main containers to prevent the fourth box from wrapping, and then debug a script that was overriding my styles. I solved this by commenting out a problematic JavaScript height-fix and using CSS (<code>min-height: 150px;</code> and <code>overflow: auto</code>) to manage the layout, fix a collapsing container, and ensure drop-zones were visible.</p>
+			    
+			    <p>This work also tracked my own tool progression. I edited the first project in Notepad, but as the complexity grew, I moved to <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> for the drag-and-drop project, which proved invaluable for managing the interconnected HTML, CSS, and JavaScript files.</p>
+			</div>
 
-<div class="entry" style="text-align: left; margin-top: 30px;">
-    <h3>Project Reflection</h3>
-    <p>For my web design work, I focused on exploring different methods for creating interactive assessments. I adapted two separate projects to build learning tools for a 7th-grade computer science unit that I previously developed, <strong>"Block Busters: Building and Fixing Our First App"</strong>, with each project presenting a unique set of technical challenges and learning opportunities.</p>
-    
-    <p>The first project, the <strong>"Code Breakers" Quiz</strong>, was an exercise in <strong>JavaScript</strong> logic. I modified a foundational script from <a href="http://javascriptkit.com" target="_blank" rel="noopener noreferrer">JavaScript Kit</a> to expand the question bank from five to ten, creating new, age-appropriate content on the topic of algorithms. The primary challenge was a data-parsing bug; I discovered that double quotes (<code>"</code>) within the question text caused a JavaScript error that prevented questions from rendering. I debugged this by systematically re-adding each question, isolating the error, and implementing the correct escape sequence (<code>\"</code>).</p>
-    
-    <p>The second project, the <strong>"Code Concepts" Drag-and-Drop Assessment</strong>, was a deeper dive into <strong>layout, CSS, and JavaScript-driven DOM manipulation</strong>. I significantly re-engineered the structure from three to four content categories (Algorithm, Variable, Loop, and Conditional) and replaced all content items. To enhance its instructional use, I added a "Quiz Mode" checkbox that dynamically instructs the JavaScript to lock answers upon being dropped. The main challenge was a series of CSS and layout conflicts. I had to widen the main containers to prevent the fourth box from wrapping, and then debug a script that was overriding my styles. I solved this by commenting out a problematic JavaScript height-fix and using CSS (<code>min-height: 150px;</code> and <code>overflow: auto</code>) to manage the layout, fix a collapsing container, and ensure drop-zones were visible.</p>
-    
-    <p>This work also tracked my own tool progression. I edited the first project in Notepad, but as the complexity grew, I moved to <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> for the drag-and-drop project, which proved invaluable for managing the interconnected HTML, CSS, and JavaScript files.</p>
-</div>
-
-		<div class="entry" style="text-align: center;">
-			<a href="../EME6208_Fall2025/" class="button">Back to Top</a>
+			<div class="entry" style="text-align: center;">
+				<a href="../EME6208_Fall2025/" class="button">Back to Top</a>
+			</div>
 		</div>
 	</div>
-</div>
 </div>
 
 <div id="footer">
