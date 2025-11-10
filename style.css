@@ -48,9 +48,6 @@ p, ul, ol {
 	line-height: 180%;
 }
 
-ul, ol {
-}
-
 a {
 	text-decoration: none;
 	color: #D95F0E; /* Using the UI-friendlier orange */
@@ -172,8 +169,6 @@ a:hover {
 	color: #FFFFFF;
 }
 
-#menu .current_page_item a {
-}
 
 /* Page */
 
@@ -288,3 +283,4 @@ a:hover {
     color: #FFFFFF;
     text-decoration: none;
 }
+
