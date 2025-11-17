@@ -10,7 +10,7 @@ body {
 	margin: 0;
 	padding: 0;
 	/* CHANGED background to incorporate the image */
-	background: #f4f7f6 url('uf-background.jpg') no-repeat center center fixed;
+	background: #f4f7f6 url('images/uf-background.jpg') no-repeat center center fixed;
 	background-size: cover; /* Ensures the image covers the entire viewport */
 
 	font-family: Arial, Helvetica, sans-serif;
@@ -294,3 +294,4 @@ a:hover {
 	border-radius: 8px; /* Matches project box style */
 	border: 1px solid #eee; /* Adds a light border */
 }
+
