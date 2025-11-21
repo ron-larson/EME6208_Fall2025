@@ -1,12 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
+<meta charset="utf-8" />
 <title>Web Design - Ron Larson Fall 2025 EME6208 ePortfolio</title>
-
 <link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
@@ -33,32 +29,34 @@
 	</div>
 	<div id="page" class="container">
 		<div>
-			<div class="entry" style="text-align: center;">
+			<div class="entry text-center">
 				<h2>Interactive Web-based Assessments</h2>
-				<p></p>
 			</div>
-			<div class="entry" style="text-align: center; margin-top: 30px;">
+			<div class="entry text-center">
 			    <h3>Project Artifacts</h3>
+			    
+                <div class="gallery-container">
+            	    
+            	    <div class="gallery-item">
+            		 	<h3 class="video-title">"Code Breakers" Quiz</h3>
+            		 	<a href="https://ron-larson.github.io/EME6208_Fall2025/quiz/" target="_blank" rel="noopener noreferrer" title="View the live quiz">
+            		 		<img src="images/quiz.png" alt="Screenshot of the JavaScript Quiz" class="gallery-thumb"/>
+            		 	</a>
+            		 	<p class="gallery-caption">A 10-question multiple-choice quiz on algorithms, built with HTML and JavaScript logic.</p>
+            	    </div>
+    
+                    <div class="gallery-item">
+            	        <h3 class="video-title">"Code Concepts" Sorter</h3>
+            	        <a href="https://ron-larson.github.io/EME6208_Fall2025/drag/" target="_blank" rel="noopener noreferrer" title="View the live drag-and-drop assessment">
+            	            <img src="images/drag.png" alt="Screenshot of the Drag-and-Drop Assessment" class="gallery-thumb"/>
+            	        </a>
+            	        <p class="gallery-caption">An interactive drag-and-drop sorting activity built with HTML, CSS, and DOM manipulation.</p>
+            	    </div>
+            	    
+    			</div>
 			</div>
-			<div class="gallery-container" style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; padding: 10px;">
-		    	<div class="gallery-item" style="flex-basis: 45%; min-width: 300px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; padding-bottom: 20px; background: #fff;">
-		       	 	<h3 style="margin-bottom: 10px; color: #005a9c;">"Code Breakers" Quiz</h3>
-		       	 	<a href="https://ron-larson.github.io/EME6208_Fall2025/quiz/" target="_blank" rel="noopener noreferrer" title="View the live quiz">
-		            	<img src="images/quiz.png" alt="Screenshot of the JavaScript Quiz" style="width: 100%; border-radius: 8px 8px 0 0;"/>
-		        	</a>
-		        	<p style="margin-top: 15px; padding: 0 10px;">A 10-question multiple-choice quiz on algorithms, built with HTML and JavaScript logic.</p>
-		    	</div>
 
-			    <div class="gallery-item" style="flex-basis: 45%; min-width: 300px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; padding-bottom: 20px; background: #fff;">
-			        <h3 style="margin-bottom: 10px; color: #005a9c;">"Code Concepts" Sorter</h3>
-			        <a href="https://ron-larson.github.io/EME6208_Fall2025/drag/" target="_blank" rel="noopener noreferrer" title="View the live drag-and-drop assessment">
-			            <img src="images/drag.png" alt="Screenshot of the Drag-and-Drop Assessment" style="width: 100%; border-radius: 8px 8px 0 0;"/>
-			        </a>
-			        <p style="margin-top: 15px; padding: 0 10px;">An interactive drag-and-drop sorting activity built with HTML, CSS, and DOM manipulation.</p>
-			    </div>
-			</div>
-
-			<div class="entry" style="text-align: left; margin-top: 30px;">
+			<div class="entry text-left">
 			    <h3>Project Reflection</h3>
 			    <p>For my web design work, I focused on exploring different methods for creating interactive assessments. I adapted two separate projects to build learning tools for a 7th-grade computer science unit that I previously developed, <strong>"Block Busters: Building and Fixing Our First App"</strong>, with each project presenting a unique set of technical challenges and learning opportunities.</p>
 			    
@@ -66,10 +64,10 @@
 			    
 			    <p>The second project, the <strong>"Code Concepts" Drag-and-Drop Assessment</strong>, was a deeper dive into <strong>layout, CSS, and JavaScript-driven DOM manipulation</strong>. I significantly re-engineered the structure from three to four content categories (Algorithm, Variable, Loop, and Conditional) and replaced all content items. To enhance its instructional use, I added a "Quiz Mode" checkbox that dynamically instructs the JavaScript to lock answers upon being dropped. The main challenge was a series of CSS and layout conflicts. I had to widen the main containers to prevent the fourth box from wrapping, and then debug a script that was overriding my styles. I solved this by commenting out a problematic JavaScript height-fix and using CSS (<code>min-height: 150px;</code> and <code>overflow: auto</code>) to manage the layout, fix a collapsing container, and ensure drop-zones were visible.</p>
 			    
-			    <p>This work also tracked my own tool progression. I edited the first project in Notepad, but as the complexity grew, I moved to <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> for the drag-and-drop project, which proved invaluable for managing the interconnected HTML, CSS, and JavaScript files.</p>
+			    <p>Finally, these projects highlighted the importance of <strong>User Interface (UI) usability</strong>. In the drag-and-drop activity, I realized that simply having the code "work" was not enough; the user needed visual feedback. I added a cursor change (<code>cursor: move</code>) in the CSS so students would intuitively know which elements were interactable. This small detail significantly improved the user experience, reinforcing the lesson that good web design is as much about how a tool <em>feels</em> as how it functions. This work tracked my own tool progression as well; I edited the first project in Notepad, but as the complexity grew, I moved to <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a>, which proved invaluable for managing the interconnected HTML, CSS, and JavaScript files.</p>
 			</div>
 
-			<div class="entry" style="text-align: center;">
+			<div class="entry text-center">
 				<a href="../EME6208_Fall2025/" class="button">Back to Top</a>
 			</div>
 		</div>
