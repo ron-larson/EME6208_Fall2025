@@ -302,8 +302,8 @@ a:hover {
     background: #fff;
 }
 
-.gallery-img, .video-thumb {
-    width: 100%;
+.gallery-img, .gallery-thumb, .video-thumb {
+    width: 100%;  /* This forces the image to fit inside the box */
     height: auto;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -382,3 +382,4 @@ a:hover {
         margin: 0 auto 20px auto;
     }
 }
+
