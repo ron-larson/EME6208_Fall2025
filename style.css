@@ -4,20 +4,19 @@ http://templated.co
 Released for free under the Creative Commons Attribution License
 */
 
-/* --- UF-THEMED CHANGES WITH BACKGROUND IMAGE --- */
+/* --- UF-THEMED GLOBAL STYLES --- */
 
 body {
 	margin: 0;
 	padding: 0;
-	/* CHANGED background to incorporate the image */
+	/* UF Background Image Setup */
 	background: #f4f7f6 url('images/uf-background.jpg') no-repeat center center fixed;
-	background-size: cover; /* Ensures the image covers the entire viewport */
-
+	background-size: cover; 
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #333333;
-
-	/* --- STICKY FOOTER FIX (PART 1) --- */
+	
+	/* Sticky Footer Setup */
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -28,20 +27,12 @@ h1, h2, h3 {
 	padding: 0;
 	text-transform: uppercase;
 	font-weight: 300;
-	color: #0021A5;
+	color: #0021A5; /* UF Blue */
 }
 
-h1 {
-	font-size: 2em;
-}
-
-h2 {
-	font-size: 2.8em;
-}
-
-h3 {
-	font-size: 1.6em;
-}
+h1 { font-size: 2em; }
+h2 { font-size: 2.8em; }
+h3 { font-size: 1.6em; }
 
 p, ul, ol {
 	margin-top: 0;
@@ -50,20 +41,20 @@ p, ul, ol {
 
 a {
 	text-decoration: none;
-	color: #D95F0E; /* Using the UI-friendlier orange */
+	color: #D95F0E; /* UF Orange */
 }
 
 a:hover {
 	text-decoration: underline;
 }
 
+/* --- LAYOUT CONTAINERS --- */
+
 #wrapper {
 	overflow: hidden;
-	background: #FFFFFF; /* Keep white content wrapper */
-    /* Add some margin to the top and bottom to reveal more of the background image */
-    margin-top: 20px;
-    margin-bottom: 10px;
-    /* NOTE: 'flex-grow: 1;' has been removed */
+	background: #FFFFFF;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 .container {
@@ -71,7 +62,7 @@ a:hover {
 	margin: 0px auto;
 }
 
-/* Header */
+/* --- HEADER & LOGO --- */
 
 #header-wrapper {
 	overflow: hidden;
@@ -85,12 +76,10 @@ a:hover {
 	padding: 0px 20px;
 }
 
-/* Logo */
-
 #logo {
 	overflow: hidden;
-	height: auto; /* LETS THE BOX GROW WITH VARYING CONTENT */
-	padding-bottom: 20px; /* ADDS SOME BREATHING ROOM AT THE BOTTOM */
+	height: auto;
+	padding-bottom: 20px;
 }
 
 #logo h1, #logo p {
@@ -99,38 +88,26 @@ a:hover {
 
 #logo h1 {
 	padding: 5px 0px 20px 0px;
-	letter-spacing: -1px; /* RELAXES THE AGGRESSIVE NEGATIVE SPACING */
+	letter-spacing: -1px;
 	text-transform: capitalize;
-	font-size: 44px; /* A MUCH MORE REASONABLE SIZE FOR LONGER TITLES */
+	font-size: 44px;
 }
 
 #logo p {
-	margin-top: 10px; /* GIVES IT SPACE FROM THE H1 INSTEAD OF PULLING IT UP */
+	margin-top: 10px;
 	padding: 0px 0px 0px 5px;
 	font-size: 20px;
 	font-weight: 300;
 	color: #555555;
 }
 
-#logo p a {
-	color: #D95F0E;
-}
-
-#logo a {
-	border: none;
-	background: none;
-	text-decoration: none;
-	color: #0021A5;
-}
-
-
-/* Menu */
+/* --- MENU NAVIGATION --- */
 
 #menu-wrapper {
 	overflow: hidden;
 	height: 52px;
 	margin-bottom: 2em;
-	background: #0021A5;
+	background: #0021A5; /* UF Blue */
 }
 
 #menu {
@@ -140,7 +117,7 @@ a:hover {
 
 #menu ul {
 	margin: 0;
-	padding: 0px 0px 0px 0px;
+	padding: 0;
 	list-style: none;
 	line-height: normal;
 	text-align: center;
@@ -164,37 +141,29 @@ a:hover {
 }
 
 #menu a:hover, #menu .current_page_item a {
-	background: #D95F0E;
+	background: #D95F0E; /* UF Orange */
 	text-decoration: none;
 	color: #FFFFFF;
 }
 
-
-/* Page */
+/* --- PAGE CONTENT --- */
 
 #page {
 	overflow: hidden;
 	padding: 20px 20px 40px 20px;
 }
 
-/* Content */
-
-#content {
-	float: left;
-	width: 752px;
-	padding: 0px 0px 0px 0px;
+.entry {
+    margin-bottom: 30px;
 }
 
-
-/* Footer */
+/* --- FOOTER --- */
 
 #footer {
 	height: 100px;
 	margin: 0 auto;
 	padding: 50px 0px 0px 0px;
-	
-	/* --- STICKY FOOTER FIX (PART 2) --- */
-	margin-top: auto;
+	margin-top: auto; /* Pushes footer to bottom */
 }
 
 #footer p {
@@ -215,14 +184,7 @@ a:hover {
 	color: #0021A5;
 }
 
-.box1 {
-	overflow: hidden;
-	height: 300px;
-	background: url(images/img04.jpg) no-repeat center bottom;
-}
-
-
-/* Three Column Content */
+/* --- HOME PAGE PROJECT BOXES --- */
 
 #three-column {
 	overflow: hidden;
@@ -265,33 +227,158 @@ a:hover {
 	padding: 30px;
 }
 
-.button
-{
+.button {
 	display: inline-block;
 	margin: 1em 0em;
 	background: #D95F0E;
 	padding: 1em 2em;
 	color: #FFFFFF;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
 }
 
-/* ADDED a hover effect for the button */
-.button:hover
-{
-    background: #0021A5;
-    color: #FFFFFF;
-    text-decoration: none;
+.button:hover {
+	background: #0021A5;
+	color: #FFFFFF;
+	text-decoration: none;
 }
 
-/* --- Style for Contact Page Headshot --- */
+/* --- UTILITY CLASSES --- */
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.clear-spacer { clear: both; margin-top: 20px; }
+
+/* --- IMAGE SPECIFIC STYLES --- */
+
+/* For Contact Page */
 .contact-headshot {
 	float: left;
 	width: 250px;
-	height: auto; /* Maintains aspect ratio */
+	height: auto;
 	margin-right: 25px;
 	margin-bottom: 15px;
-	border-radius: 8px; /* Matches project box style */
-	border: 1px solid #eee; /* Adds a light border */
+	border-radius: 8px;
+	border: 1px solid #eee;
 }
 
+/* For Home Page */
+.home-profile-pic {
+    float: right;
+    width: 200px;
+    height: auto;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    border-radius: 50%; /* Circular for modern look */
+    border: 4px solid #D95F0E; /* UF Orange Border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* --- GALLERY & ARTIFACT GRID SYSTEM --- */
+/* Used on Image, Web, Screencast, Video pages */
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.gallery-item {
+    flex-basis: 30%;
+    min-width: 250px;
+    text-align: center;
+}
+
+/* Specifically for Video/Screencast Cards to look like "Cards" */
+.video-card {
+    flex-basis: 45%;
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding-bottom: 20px;
+    background: #fff;
+}
+
+.gallery-img, .video-thumb {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.video-thumb {
+    border-radius: 8px 8px 0 0; /* Rounded top only for cards */
+    border: none;
+}
+
+.gallery-caption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.video-title {
+    margin-bottom: 10px;
+    color: #005a9c;
+    font-weight: bold;
+}
+
+/* --- MOBILE APP LAYOUT --- */
+.app-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 40px; 
+    flex-wrap: wrap;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+/* This makes the site mobile-friendly */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 95%; /* Shrinks container to fit smaller screens */
+    }
+    
+    #header, #content, #three-column .tbox1, #three-column .tbox2, #three-column .tbox3 {
+        width: 100%; /* Forces elements to fill the screen width */
+        float: none; /* Stops elements from sitting side-by-side */
+        height: auto; /* Allows height to grow with content */
+    }
+
+    /* Fix the Menu for Mobile */
+    #menu-wrapper, #menu {
+        height: auto; /* Allows menu to wrap to multiple lines */
+    }
+    
+    #menu ul li {
+        display: block; /* Stacks menu items vertically on very small screens */
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Stack the 3-column homepage boxes */
+    #three-column .tbox1, #three-column .tbox2, #three-column .tbox3 {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Stack the Gallery and Video Cards */
+    .gallery-item, .video-card {
+        flex-basis: 100%; /* Forces 1 item per row on mobile */
+        min-width: auto;
+    }
+    
+    /* Fix Logo Text size for mobile */
+    #logo h1 {
+        font-size: 32px;
+    }
+    
+    /* Adjust Profile Pic on Home/Contact to center */
+    .contact-headshot, .home-profile-pic {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+}
