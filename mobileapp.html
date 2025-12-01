@@ -36,7 +36,7 @@
 		<div class="entry text-center">
 			<h3>Project Artifacts</h3>
 			<p></p>
-			<div class="app-container">
+			<div class="app-container" style="display: flex; gap: 40px; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
 				
 				<div style="flex: 1; min-width: 250px; padding-top: 20px;">
 					<h3>App Interface</h3>
@@ -51,25 +51,39 @@
 						<a href="app/BlockBustersQuiz.apk" class="button">Download .APK File</a>
 					</p>
 					<p><em>Note: This file is designed for Android devices. You may need to enable "Install from Unknown Sources" on your device to test it.</em></p>
+
+                    <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+                        <h3>Regarding iOS Support</h3>
+                        
+                        <img src="images/ios-build-options.png" alt="MIT App Inventor iOS Build Options Menu" style="float: right; margin: 0 0 10px 15px; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        
+                        <p style="font-size: 0.9em; color: #555;">
+                            While MIT App Inventor does offer experimental support for iOS builds (as seen in the menu to the right), this feature is currently in <strong>Beta</strong>. Generating a functional <code>.ipa</code> file for iPhone requires enrollment in the Apple Developer Program.
+                        </p>
+                        <p style="font-size: 0.9em; color: #555; margin-top: 10px;">
+                            Membership costs <strong>$99/year</strong>. While fee waivers exist for educational institutions, the approval process is lengthy. Due to these cost and time barriers, this project is currently deployed exclusively for Android.
+                        </p>
+                    </div>
+
 				</div>
 			</div>
 		</div>
 
 		<div class="entry text-left">
-		    <h3>Project Reflection: Engineering the "Block Busters" Unit Quiz</h3>
-		    
-		    <p>For Project 9, I customized the <a href="https://appinventor.mit.edu/explore/ai2/quizme" target="_blank" rel="noopener noreferrer">"QuizMe" tutorial</a> to engineer the <strong>"Block Busters" Unit Quiz</strong>, a mobile application designed as a summative review tool for my previously developed 7th-grade Computer Science unit plan. The app utilizes parallel lists to manage 20 targeted questions, specifically tailored to reference class artifacts like the "Marshmallow Challenge" and the "PB&J Algorithm" video. This ensures the digital tool feels relevant to the physical classroom experience.</p>
+		    <h3>Project Reflection: Engineering the "Block Busters" Unit Quiz</h3>
+		    
+		    <p>For Project 9, I customized the <a href="https://appinventor.mit.edu/explore/ai2/quizme" target="_blank" rel="noopener noreferrer">"QuizMe" tutorial</a> to engineer the <strong>"Block Busters" Unit Quiz</strong>, a mobile application designed as a summative review tool for my previously developed 7th-grade Computer Science unit plan. The app utilizes parallel lists to manage 20 targeted questions, specifically tailored to reference class artifacts like the "Marshmallow Challenge" and the "PB&J Algorithm" video. This ensures the digital tool feels relevant to the physical classroom experience.</p>
 		
-		    <p><strong>Development & Enhancements:</strong><br />
-		    My development process utilized a hybrid workflow, coding on a <strong>Windows 11 PC</strong> while live-testing on an <strong>Android phone</strong> via the AI Companion app. To exceed the basic requirements, I focused on User Experience (UX) and Visual Design. I integrated a custom app icon and used GIMP to process a background image at 38% opacity for optimal text readability. I also hardened the logic by scripting a custom ToggleButtons procedure to prevent a "spam-click" bug I discovered during testing, ensuring the scoring system remains robust. Specifically, I used a control variable to disable the answer buttons immediately after a user selection, preventing them from racking up points by repeatedly tapping the correct answer before the 'Next' button appeared. This small logic gate was essential for maintaining the integrity of the assessment data.</p>
-		    
-		    <p><strong>Evaluating App Inventor:</strong><br />
-		    From an educator's perspective, App Inventor is an excellent parallel to the Scratch environment, perfectly bridging the gap between "drag-and-drop" logic and real-world deployment. However, coming from a background in <strong>C++ and Python</strong>, I found the "Blocks" editor occasionally restrictive. Logic structures I could type in seconds required dragging, dropping, and snapping multiple visual elements. While excellent for novices, it highlighted the efficiency trade-offs of visual programming.</p>
-		    
-		    <p><strong>Next Steps:</strong><br />
-		    Currently, the quiz is sequential. My goal for "Version 2.0" is to implement question randomization, which requires a complex "list of lists" data structure to maintain data integrity—a significant logical challenge compared to standard text-based arrays. Beyond this tool, I plan to explore <strong><a href="https://developer.android.com/studio" target="_blank" rel="noopener noreferrer">Android Studio</a> using <a href="https://developer.android.com/studio" target="_blank" rel="noopener noreferrer">Kotlin</a></strong> to leverage my object-oriented programming background, mirroring the progression from "Blocks to Text" that I model for my students.</p>
+		    <p><strong>Development & Enhancements:</strong><br />
+		    My development process utilized a hybrid workflow, coding on a <strong>Windows 11 PC</strong> while live-testing on an <strong>Android phone</strong> via the AI Companion app. To exceed the basic requirements, I focused on User Experience (UX) and Visual Design. I integrated a custom app icon and used GIMP to process a background image at 38% opacity for optimal text readability. I also hardened the logic by scripting a custom ToggleButtons procedure to prevent a "spam-click" bug I discovered during testing, ensuring the scoring system remains robust. Specifically, I used a control variable to disable the answer buttons immediately after a user selection, preventing them from racking up points by repeatedly tapping the correct answer before the 'Next' button appeared. This small logic gate was essential for maintaining the integrity of the assessment data.</p>
+		    
+		    <p><strong>Evaluating App Inventor:</strong><br />
+		    From an educator's perspective, App Inventor is an excellent parallel to the Scratch environment, perfectly bridging the gap between "drag-and-drop" logic and real-world deployment. However, coming from a background in <strong>C++ and Python</strong>, I found the "Blocks" editor occasionally restrictive. Logic structures I could type in seconds required dragging, dropping, and snapping multiple visual elements. While excellent for novices, it highlighted the efficiency trade-offs of visual programming.</p>
+		    
+		    <p><strong>Next Steps:</strong><br />
+		    Currently, the quiz is sequential. My goal for "Version 2.0" is to implement question randomization, which requires a complex "list of lists" data structure to maintain data integrity—a significant logical challenge compared to standard text-based arrays. Beyond this tool, I plan to explore <strong><a href="https://developer.android.com/studio" target="_blank" rel="noopener noreferrer">Android Studio</a> using <a href="https://developer.android.com/studio" target="_blank" rel="noopener noreferrer">Kotlin</a></strong> to leverage my object-oriented programming background, mirroring the progression from "Blocks to Text" that I model for my students.</p>
 		
-		    <p><em>Asset Credit: App icon provided by Darius Dan via Flaticon. Screen background image courtesy of pngimg.com.</em></p>
+		    <p><em>Asset Credit: App icon provided by Darius Dan via Flaticon. Screen background image courtesy of pngimg.com.</em></p>
 		</div>
 		
 		<div class="entry text-center">
